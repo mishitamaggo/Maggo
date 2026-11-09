@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designs · MAGGO · The Architecture of Continuity</title>
+  <meta name="description" content="Curated portfolio of executive workwear, artisan hand-inked tailoring, and runway couture designs.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Designs · MAGGO">
+  <meta property="og:description" content="The Curated Couture & Indie Office Collection.">
+  <meta property="og:image" content="assets/images/designs/couture_slit_gown_dual.jpg">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <base href="/">
+  <!-- Google Fonts: Editorial Fashion Pairing (Playfair Display + Cormorant Garamond + Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Vogue Main Header -->
+  <header class="vogue-header" id="site-header">
+    <div class="container vogue-header-inner">
+      <div class="vogue-masthead-container">
+        <button class="vogue-menu-btn" id="menu-toggle-btn" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="/" class="vogue-masthead-link" aria-label="MAGGO">
+          <span class="vogue-masthead-text">MAGGO</span>
+        </a>
+        <div class="vogue-header-spacer"></div>
+      </div>
+
+      <nav class="vogue-nav-strip" aria-label="Primary Navigation">
+        <a href="/story" class="nav-link" data-route="story">My Story</a>
+        <a href="/designs" class="nav-link active" data-route="designs">Designs</a>
+        <a href="/journal" class="nav-link" data-route="journal">Journal</a>
+        <a href="/inquiries" class="nav-link" data-route="inquiries">Inquiries</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu Drawer -->
+  <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+      <span class="overline">Menu</span>
+      <button id="mobile-menu-close" style="font-size: 1.5rem; padding: 0.5rem;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="/" class="nav-link" data-route="home">Home</a>
+      <a href="/story" class="nav-link" data-route="story">My Story</a>
+      <a href="/designs" class="nav-link active" data-route="designs">Designs</a>
+      <a href="/journal" class="nav-link" data-route="journal">Journal</a>
+      <a href="/inquiries" class="nav-link" data-route="inquiries">Inquiries</a>
+    </div>
+    <div style="border-top: 1px solid var(--color-border); padding-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--color-text-muted);">
+      <div>Email: mishitamaggo23@gmail.com</div>
+    </div>
+  </div>
+
+  <!-- Main View Anchor -->
+  <main id="main-content" role="main">
+    <!-- Populated dynamically by Router -->
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="MAGGO Monogram" class="footer-monogram-img">
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Index</h4>
+          <ul class="footer-links">
+            <li><a href="/story">My Story</a></li>
+            <li><a href="/designs">Designs</a></li>
+            <li><a href="/journal">The Journal</a></li>
+            <li><a href="/inquiries">Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Socials</h4>
+          <ul class="footer-links">
+            <li><a href="https://www.instagram.com/maisonmaggo/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@maisonmaggo" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://in.pinterest.com/maisonmaggo/" target="_blank" rel="noopener">Pinterest</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">MAGGO Notes</h4>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 1rem; line-height: 1.7;">
+            Receive unhurried reflections on Indian craft, seasonal editorials, and design dispatches.
+          </p>
+          <form class="newsletter-form" id="footer-newsletter-form">
+            <div class="newsletter-input-group">
+              <input type="email" placeholder="Your email address" required aria-label="Email Address">
+              <button type="submit" class="btn-primary" style="padding: 0 1.25rem;">Join</button>
+            </div>
+            <span style="font-size: 0.72rem; color: var(--color-text-light);">We send no more than one considered letter per month.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 MAGGO · Directed by Mishita Maggo. All rights reserved.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="/inquiries" style="text-decoration: underline;">Privacy Policy</a>
+          <a href="/inquiries" style="text-decoration: underline;">Terms of Service</a>
+          <a href="/inquiries" style="text-decoration: underline;">Accessibility Statement (WCAG 2.1 AA)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container" id="toast-container"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
