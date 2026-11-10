@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://maisonmaggo.com/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://maisonmaggo.com/assets/images/designs/kantha_model.jpg</image:loc>
+      <image:title>MAGGO Contemporary Indian Haute Couture</image:title>
+      <image:caption>MAGGO Bengal Kantha Running Stitch Handcrafted Collection</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://maisonmaggo.com/designs</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://maisonmaggo.com/assets/images/designs/couture_slit_gown_dual.jpg</image:loc>
+      <image:title>The Curated Couture by MAGGO</image:title>
+      <image:caption>Curated Portfolio of Indian Architectural Couture &amp; Tailoring</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://maisonmaggo.com/story</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://maisonmaggo.com/assets/images/founder_mishita.jpg</image:loc>
+      <image:title>Mishita Maggo - Founder &amp; Creative Director</image:title>
+      <image:caption>The founding story and craft philosophy of MAGGO</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://maisonmaggo.com/journal</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://maisonmaggo.com/assets/images/designs/mithila_waistcoat_board.jpg</image:loc>
+      <image:title>The MAGGO Journal</image:title>
+      <image:caption>Essays on Indian Craft Heritage, Slow Textiles, and Architectural Restraint</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://maisonmaggo.com/inquiries</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

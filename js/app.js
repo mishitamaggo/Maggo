@@ -29,6 +29,65 @@ function showToast(message) {
 // ==========================================================================
 // Routing Engine (HTML5 History API with Clean URLs)
 // ==========================================================================
+const ROUTE_SEO = {
+  home: {
+    title: 'MAGGO · Contemporary Indian Haute Couture & Artisanal Minimalism',
+    description: 'MAGGO by Mishita Maggo is a contemporary Indian couture house translating regional craft heritage—Bengal Kantha, Kutch embroidery, Pattachitra—into architectural silhouettes and modern tailoring.',
+    url: 'https://maisonmaggo.com/'
+  },
+  story: {
+    title: 'My Story · Mishita Maggo | Founder & Creative Philosophy · MAGGO',
+    description: 'The founding story of MAGGO: How Mishita Maggo turned a generational anxiety into an enduring luxury house built on architectural restraint and Indian craft lineage.',
+    url: 'https://maisonmaggo.com/story'
+  },
+  designs: {
+    title: 'The Curated Couture & Collections · MAGGO | Handcrafted Indian Couture & Tailoring',
+    description: "Discover MAGGO's curated couture lookbook: Bengal Kantha waistcoats, Kutch geometric tailoring, Pattachitra silk shirts, architectural suiting, and sculptural 18k vermeil jewelry.",
+    url: 'https://maisonmaggo.com/designs'
+  },
+  journal: {
+    title: 'The Journal · MAGGO | Indian Craft Heritage, Design Philosophy & Essays',
+    description: 'Forthcoming essays, monographs, and design dispatches from MAGGO examining regional Indian craft intelligence, slow textiles, and modern minimalist form.',
+    url: 'https://maisonmaggo.com/journal'
+  },
+  inquiries: {
+    title: 'Direct Inquiries & Press · MAGGO | Editorial & Private Appointments',
+    description: 'Connect directly with MAGGO and creative director Mishita Maggo for editorial styling, press coverage, private design appointments, and bespoke inquiries.',
+    url: 'https://maisonmaggo.com/inquiries'
+  }
+};
+
+function updatePageSEO(route) {
+  const meta = ROUTE_SEO[route] || ROUTE_SEO.home;
+  if (!meta) return;
+
+  document.title = meta.title;
+
+  const descTag = document.querySelector('meta[name="description"]');
+  if (descTag) descTag.setAttribute('content', meta.description);
+
+  const canonicalTag = document.querySelector('link[rel="canonical"]');
+  if (canonicalTag) canonicalTag.setAttribute('href', meta.url);
+
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (ogTitle) ogTitle.setAttribute('content', meta.title);
+
+  const ogDesc = document.querySelector('meta[property="og:description"]');
+  if (ogDesc) ogDesc.setAttribute('content', meta.description);
+
+  const ogUrl = document.querySelector('meta[property="og:url"]');
+  if (ogUrl) ogUrl.setAttribute('content', meta.url);
+
+  const twTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twTitle) twTitle.setAttribute('content', meta.title);
+
+  const twDesc = document.querySelector('meta[name="twitter:description"]');
+  if (twDesc) twDesc.setAttribute('content', meta.description);
+
+  const twUrl = document.querySelector('meta[name="twitter:url"]');
+  if (twUrl) twUrl.setAttribute('content', meta.url);
+}
+
 function getRouteFromPath(pathname) {
   if (!pathname) return 'home';
   // Strip leading/trailing slashes and .html extension
@@ -111,6 +170,9 @@ function handleRoute() {
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
   closeMobileMenu();
+
+  // Update dynamic SEO metadata for the active route
+  updatePageSEO(activeNavRoute);
 
   switch (state.currentRoute) {
     case 'home':

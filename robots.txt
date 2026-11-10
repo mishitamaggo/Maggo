@@ -1,0 +1,6 @@
+# robots.txt for MAGGO (https://maisonmaggo.com)
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://maisonmaggo.com/sitemap.xml
