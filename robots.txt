@@ -4,3 +4,4 @@ Allow: /
 
 # Sitemap
 Sitemap: https://maisonmaggo.com/sitemap.xml
+
